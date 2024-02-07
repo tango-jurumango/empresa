@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login-styles.css">
+    <script src="https://kit.fontawesome.com/a275da13b0.js"></script>
+    <title id='title'>Criar Conta</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <!-- sign-up form code goes here-->
+            <form action="#">
+                <h1>Criar Conta</h1>
+                <div class="social-container">
+                    <a href="#" class="social facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                <button type="button" id="togglePassword">Mostrar senha</button>
+                <button>Criar Conta</button>
+            </form>
+
+        </div>
+        <div class="form-container sign-in-container">
+            <!-- sign-in form code goes here-->
+            <form action="#">
+                <h1>Entrar</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Enter your email" />
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter password" required>
+                <button type="button" id="toggleConfirmPassword">Mostrar senha</button>
+                <a href="#">Forgot your password?</a>
+                <button>Entrar</button>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <!-- overlay code goes here-->
+
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>
+                        To keep connected with us please login with your personal info
+                    </p>
+                    <button class="ghost" id="signIn">Entrar</button>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Criar Conta</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="login-script.js"></script>
+</body>
+
+</html>
